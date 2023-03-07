@@ -1,0 +1,40 @@
+.header {
+  background-image: url("../../img/svg/gradient-main.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  button {}
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 210px 1fr 286px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.header__nav {display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+  }
+
+  li {
+    text-align: center;
+
+  }
+}
+
+.header__user {
+  @include reset-ul();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: auto;
+  max-width: 286px;
+  grid-column-gap: 24px;
+}
