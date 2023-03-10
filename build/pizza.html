@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body><h1 class="visually-hidden">Pizza PepePizza</h1>
+<body>
+  <h1 class="visually-hidden">Pizza PepePizza</h1>
   <header class="header">
     <div class="header__container container">
       <a href="" class="header__logo">
@@ -44,226 +45,306 @@
       </nav>
 
       <ul class="header__user">
-        <li><button class="btn">Login</button>
+        <li>
+
+          <button class="btn">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+            </svg>Login</button>
         <li><button class="btn">Cart</button>
       </ul>
     </div>
   </header>
   <main class="main">
     <div class="container main__container">
-      <h2>Pizza's range</h2>
+      <h2 class="visually-hidden">Pizza's range</h2>
       <div class="main__tabs tabs">
-        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-        <label for="tab-btn-1">All</label>
-        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-        <label for="tab-btn-2">Meat</label>
-        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-        <label for="tab-btn-3">Vegan</label>
-        <input type="radio" name="tab-btn" id="tab-btn-4" value="">
-        <label for="tab-btn-4">Chilli</label>
+        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <label class="custom-radio__label custom-radio__label--active" for="tab-btn-1">All</label>
+        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <label class="custom-radio__label" for="tab-btn-2">Meat</label>
+        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-3" value="">
+        <label class="custom-radio__label" for="tab-btn-3">Vegan</label>
+        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-4" value="">
+        <label class="custom-radio__label" for="tab-btn-4">Chilli</label>
         <ul>
           <li id="content-1">
             <h3>The Cheeseburger</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-classic-2x.webp 2x, ./img/pizza-classic-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-classic-2x.png 2x"
+                src="./img/pizza-classic-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>The Meatfielder</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-meat-2x.webp 2x, ./img/pizza-meat-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-meat-2x.png 2x"
+                src="./img/pizza-meat-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Original Cheese & Tomato</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-vegy-2x.webp 2x, ./img/pizza-vegy-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-vegy-2x.png 2x"
+                src="./img/pizza-vegy-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Vegi Supreme</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-ham-2x.webp 2x, ./img/pizza-ham-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-ham-2x.png 2x"
+                src="./img/pizza-ham-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>American Hot
             </h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-procuto-2x.webp 2x, ./img/pizza-procuto-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizzaprocuto-2x.png 2x"
+                src="./img/pizza-procuto-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Chicken Feast</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-cheese-2x.webp 2x, ./img/pizza-cheese-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-cheese-2x.png 2x"
+                src="./img/pizza-cheese-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Farmhouse
             </h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
 
           <li>
             <h3>Pepperoni Passion</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
           <li>
             <h3>Hawaiian</h3>
             <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
 
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button>Add to cart</button>
-              <button>More</button>
+              <button class="btn">Add to cart</button>
+              <button class="btn">More</button>
             </div>
           </li>
 
 
         </ul>
-<button class="button main__button"> Показати більше</button>
+        <button class="button main__button"> Показати більше</button>
       </div>
 
     </div>
@@ -321,16 +402,21 @@
             </h3>
             <ul class="social">
               <li><a href="">
-                <h4 class="visually-hidden">
-                  Instagram
-                </h4>
-              </a></li>
-              <li><a href=""><h4 class="visually-hidden">facebook</h4></a></li>
-              <li><a href=""><h4 class="visually-hidden">twitter</h4></a></li>
+                  <h4 class="visually-hidden">
+                    Instagram
+                  </h4>
+                </a></li>
+              <li><a href="">
+                  <h4 class="visually-hidden">facebook</h4>
+                </a></li>
+              <li><a href="">
+                  <h4 class="visually-hidden">twitter</h4>
+                </a></li>
             </ul>
           </li>
           <li>
-            <h3>Address</h3><address>м. Київ,
+            <h3>Address</h3>
+            <address>м. Київ,
               Голосіївський проспект, 3.</address>
           </li>
         </ul>

@@ -1,0 +1,22 @@
+.custom-radio {
+  @include visually-hidden();
+}
+
+.custom-radio__label {
+
+  font-size: 14px;
+  line-height: 23px;
+
+  letter-spacing: -0.015em;
+
+
+
+  color: $color-secondary-grey-hover;
+  padding: 10px;
+  border-bottom: solid 2px $color-secondary-grey-hover;
+&--active {
+  border-color: $color-primary-red;
+  color: $color-primary-red;
+}
+
+}

@@ -15,6 +15,8 @@
 @import "global/utils";
 @import "global/container";
 @import "global/nav";
+@import "global/tabs";
+
 
 // Blocks
 // ---------------------------------
@@ -22,7 +24,9 @@
 @import "blocks/btn";
 @import "blocks/modal";
 @import "blocks/header";
-
+@import "blocks/custom-input";
+@import "blocks/custom-radio";
+@import "blocks/main";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
