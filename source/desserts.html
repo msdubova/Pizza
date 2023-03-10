@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,35 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>Pizza</title>
+  <link rel="preload" href="fonts/montserrat-v25-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v25-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v25-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v25-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v25-latin-300italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="page__body">
+  <h1 class="visually-hidden">Pizza PepePizza</h1>
   <header class="header">
-    <h1 class="visually-hidden">Desserts PepePizza</h1>
-    <div class="container">
+    <div class="header__container container">
       <a href="" class="header__logo">
-
+        <svg width="176" height="49" role="img">
+          <use xlink:href="img/sprite_auto.svg#logo"></use>
+        </svg>
       </a>
       <nav class="header__nav nav">
         <ul>
           <li>
-            <a href="pizza.html">
+            <a class="nav__element">
               Піца
             </a>
           </li>
           <li>
-            <a href="drinks.html">
+            <a href="drinks.html" class="nav__element">
               Напої
             </a>
           </li>
           <li>
-            <a href="sides.html">
+            <a href="sides.html" class="nav__element">
               Інші страви
             </a>
           </li>
           <li>
-            <a>
+            <a href="desserts.html" class="nav__element">
               Десерти
             </a>
           </li>
@@ -43,23 +50,32 @@
       </nav>
 
       <ul class="header__user">
-        <li><button>Login</button>
-        <li><button>Cart</button>
+        <li>
+
+          <button class="btn">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="img/sprite_auto.svg#icon-user"></use>
+            </svg>Login</button>
+        <li><button class="btn">Cart</button>
       </ul>
     </div>
   </header>
-  <main class="main">
+  <main class="page__main main section">
     <div class="container main__container">
-      <h2>Desserts range</h2>
+      <h2 class="visually-hidden">Pizza's range</h2>
       <div class="main__tabs tabs">
-        <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-        <label for="tab-btn-1">All</label>
-        <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-        <label for="tab-btn-2">Meat</label>
-        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-        <label for="tab-btn-3">Vegan</label>
-        <input type="radio" name="tab-btn" id="tab-btn-4" value="">
-        <label for="tab-btn-4">Chilli</label>
+        <div class="tabs__controls">
+          <input data-tab="#all" class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-1" value=""
+          checked>
+        <label class="custom-radio__label" for="tab-btn-1">All</label>
+        <input data-tab="#ice-cream" class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <label class="custom-radio__label" for="tab-btn-2">Ice-cream</label>
+        <input data-tab="#bakery" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-3" value="">
+        <label class="custom-radio__label" for="tab-btn-3">Bakery</label>
+        <input data-tab="#cakes" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-4"
+          value="">
+        <label class="custom-radio__label" for="tab-btn-4">Cakes</label>
+        </div>
         <ul>
           <li id="content-1">
             <h3>Vanilla icecream</h3>
@@ -262,24 +278,25 @@
 
 
         </ul>
-<button class="button main__button"> Показати більше</button>
+        <button class="main__button tabs__more tabs__more--hidden"> Show more</button>
       </div>
 
     </div>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="footer__container container">
       <a href="" class="footer__logo">
-
+        <svg width="176" height="49" role="img">
+          <use xlink:href="img/sprite_auto.svg#logo-red"></use>
+        </svg>
       </a>
       <nav class="footer__nav nav">
         <h2 class="visually-hidden">
           Site navigation
         </h2>
         <ul>
-
           <li>
-            <h3>Menu</h3>
+            <h3 class="nav__element">Menu</h3>
             <ul>
               <li>
                 <a href="">Pizza</a>
@@ -296,44 +313,59 @@
             </ul>
           </li>
           <li>
-            <h3>Contacts</h3>
+            <h3 class="nav__element">Contacts</h3>
             <ul>
               <li>
-                <a href="">+38 (099) 111 1111</a>
+                <a href="tel:+38(099)1111111">+38 (099) 111 1111</a>
               </li>
               <li>
-                <a href="">+38 (098) 111 1111</a>
+                <a href="tel:+38(099)1111111">+38 (098) 111 1111</a>
               </li>
               <li>
-                <a href="">+38 (093) 111 1111</a>
+                <a href="tel:+38(099)1111111">+38 (093) 111 1111</a>
               </li>
               <li>
-                <a href="">+38 (044) 111 1111</a>
+                <a href="tel:+38(099)1111111">+38 (044) 111 1111</a>
               </li>
             </ul>
           </li>
           <li>
-            <h3>About us
+            <h3 class="nav__element">About us
 
             </h3>
-            <ul class="social">
+            <ul class="socials">
               <li><a href="">
-                <h4 class="visually-hidden">
-                  Instagram
-                </h4>
-              </a></li>
-              <li><a href=""><h4 class="visually-hidden">facebook</h4></a></li>
-              <li><a href=""><h4 class="visually-hidden">twitter</h4></a></li>
+                  <h4 class="visually-hidden">
+                    Instagram
+                  </h4>
+                  <svg width="24" height="24" role="img">
+                    <use xlink:href="img/sprite_auto.svg#logo-insta"></use>
+                  </svg>
+                </a></li>
+              <li><a href="">
+                  <h4 class="visually-hidden">facebook</h4>
+                  <svg width="11" height="20" role="img">
+                    <use xlink:href="img/sprite_auto.svg#logo-fb"></use>
+                  </svg>
+                </a></li>
+              <li><a href="">
+                  <h4 class="visually-hidden">twitter</h4>
+                  <svg width="18" height="22" role="img">
+                    <use xlink:href="img/sprite_auto.svg#logo-twitter"></use>
+                  </svg>
+                </a></li>
             </ul>
           </li>
           <li>
-            <h3>Address</h3><address>м. Київ,
-              Голосіївський проспект, 3.</address>
+            <h3 class="nav__element">Address</h3>
+            <address>м. Київ,
+              Голосіївський&nbsp;проспект,&nbsp;3.</address>
           </li>
         </ul>
       </nav>
     </div>
   </footer>
+
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
