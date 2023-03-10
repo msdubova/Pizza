@@ -673,9 +673,18 @@ button,
 }
 
 .tabs__more {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 10px auto;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  display: -ms-grid;
+  display: grid;
+  color: #4D734F;
+  background: none;
+  border: 1px solid #4D734F;
 }
 
 .tabs__more--hidden {
@@ -1002,6 +1011,7 @@ button,
 }
 
 .custom-radio__label {
+  cursor: pointer;
   font-size: 14px;
   line-height: 23px;
   letter-spacing: -0.015em;

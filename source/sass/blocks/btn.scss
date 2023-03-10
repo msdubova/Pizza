@@ -18,6 +18,13 @@
     background-color: $color-torch-red;
   }
 
+  // &--white {
+
+  //   margin: auto;
+  //   grid-column: 1fr;
+  //   background: none;
+  //   border: 1px solid $color-secondary-green;color: $color-secondary-green;
+  // }
   &:disabled {
     opacity: 0.5;
 

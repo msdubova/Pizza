@@ -62,10 +62,23 @@
 
 
 }
-.tabs__more {
-    display: inline-flex;
-    &--hidden {
-      display: none;
-    }
 
+.tabs__more {
+  margin: 10px auto;
+  padding: 12px 24px;
+  cursor: pointer;
+
+  border-radius: 10px;
+  transition: opacity $trans-default;
+
+
+  display: grid;
+  color: $color-secondary-green;
+  background: none;
+  border: 1px solid $color-secondary-green;
+
+  &--hidden {
+    display: none;
   }
+
+}
