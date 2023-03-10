@@ -2,8 +2,9 @@
   @include visually-hidden();
 }
 
+
 .custom-radio__label {
-cursor: pointer;
+  cursor: pointer;
   font-size: 14px;
   line-height: 23px;
 
@@ -15,9 +16,9 @@ cursor: pointer;
   padding: 10px;
   border-bottom: solid 2px $color-secondary-grey-hover;
 
-  &--active {
-    border-color: $color-primary-red;
-    color: $color-primary-red;
-  }
+}
 
+.custom-radio:checked+.custom-radio__label {
+  border-color: $color-primary-red;
+  color: $color-primary-red;
 }

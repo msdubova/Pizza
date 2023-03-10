@@ -54,7 +54,9 @@
     color: $color-secondary-grey;
   }
 }
-
+.tabs__controls {
+  margin-bottom: 40px;
+}
 .tabs__card {
   &--hidden {
     display: none;

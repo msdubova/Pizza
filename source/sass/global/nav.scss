@@ -4,3 +4,41 @@
     display: grid;
   }
 }
+
+.nav__element {
+  font-weight: 600;
+  color: $color-primary-red;
+}
+
+.nav {
+  a[href^="tel:"] {
+
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration-line: underline;
+
+
+
+    color: $color-secondary-grey;
+
+
+
+  }
+
+  address {
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+display: flex;
+
+
+color: $color-secondary-grey;
+
+
+  }
+}
