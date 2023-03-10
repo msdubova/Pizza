@@ -672,6 +672,16 @@ button,
   display: none;
 }
 
+.tabs__more {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.tabs__more--hidden {
+  display: none;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
