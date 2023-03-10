@@ -108,9 +108,16 @@ function setAccordeon(elements, number) {
   let tab = document.querySelector('.tabs');
   let btn = tab.querySelector('.tabs__more');
 
+  function setAccordeonButton(array) {
+    btn.addEventListener('click', function () {
+      setAccordeon(array, (number + number));
+    });
+  }
+
   if (!btn.classList.contains('tabs__more--hidden')) {
     btn.classList.add('tabs__more--hidden');
   }
+
   elements.forEach(function (element) {
     element.classList.remove('visually-hidden');
   });
@@ -119,12 +126,12 @@ function setAccordeon(elements, number) {
   if (elements.length > number) {
 
     btn.classList.remove('tabs__more--hidden');
+    setAccordeonButton(elements);
     for (let i = elements.length; i > number; i--) {
       elements[i - 1].classList.add('visually-hidden');
     }
   }
 }
-
 
 setTab();
 
