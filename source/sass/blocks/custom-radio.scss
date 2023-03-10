@@ -14,9 +14,10 @@
   color: $color-secondary-grey-hover;
   padding: 10px;
   border-bottom: solid 2px $color-secondary-grey-hover;
-&--active {
-  border-color: $color-primary-red;
-  color: $color-primary-red;
-}
+
+  &--active {
+    border-color: $color-primary-red;
+    color: $color-primary-red;
+  }
 
 }

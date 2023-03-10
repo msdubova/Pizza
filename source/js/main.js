@@ -44,3 +44,69 @@ window.addEventListener('DOMContentLoaded', () => {
 // breakpointChecker();
 
 // используйте .closest(el)
+
+
+function setTab() {
+  const tab = document.querySelector('.tabs');
+  const tabControls = tab.querySelectorAll('.tabs__control');
+  const tabCards = tab.querySelectorAll('.tabs__card');
+
+  function clearTab() {
+    tabCards.forEach(function (card) {
+      card.classList.add('tabs__card--hidden');
+    });
+  }
+
+  // function resetTab() {
+  //   let all = tab.querySelector('input[name="tab-btn"]:checked');
+  //   if (all.getAttribute('data-tab') === 'all') {
+  //     tabCards.forEach(function (card) {
+  //       card.classList.remove('tabs__card--hidden');
+  //       alert(card);
+  //     })
+  //   }
+  // };
+
+  function changeTab(item) {
+    clearTab();
+    let currentControl = item;
+    let tabId = currentControl.getAttribute('data-tab');
+    let currentCards = tab.querySelectorAll(tabId);
+
+    if (tabId === '#all') {
+      tabCards.forEach(function (each) {
+        each.classList.remove('tabs__card--hidden');
+      });
+    } else {
+      currentCards.forEach(function (each) {
+        each.classList.remove('tabs__card--hidden');
+      });
+    }
+
+    // resetTab();
+  }
+
+  tabControls.forEach(function (element) {
+    element.addEventListener('change', function () {
+      changeTab(element);
+    });
+  });
+
+//   tabControls.forEach(function(control){
+//     if(control.classList.contains('tabs__control--active')){
+
+//       let currentControl = control;
+//       let tabId = currentControl.getAttribute('data-tab');
+//       let currentCards = tab.querySelectorAll(tabId);
+
+// currentCards.forEach(function(element){
+//   element.classList.remove('tabs__card--hidden');
+// })
+
+//     }
+//   })
+
+
+};
+
+setTab();

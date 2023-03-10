@@ -59,16 +59,20 @@
     <div class="container main__container">
       <h2 class="visually-hidden">Pizza's range</h2>
       <div class="main__tabs tabs">
-        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+        <input data-tab="#all" class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
         <label class="custom-radio__label custom-radio__label--active" for="tab-btn-1">All</label>
-        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-2" value="">
+        <input  data-tab="#meat"class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-2" value="">
         <label class="custom-radio__label" for="tab-btn-2">Meat</label>
-        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-3" value="">
+        <input  data-tab="#vegy" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-3" value="">
         <label class="custom-radio__label" for="tab-btn-3">Vegan</label>
-        <input class="custom-radio" type="radio" name="tab-btn" id="tab-btn-4" value="">
+        <input  data-tab="#chilli"class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-4" value="">
         <label class="custom-radio__label" for="tab-btn-4">Chilli</label>
+
+
+
+
         <ul>
-          <li id="content-1">
+          <li class="tabs__card" id="meat">
             <h3>The Cheeseburger</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -86,7 +90,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="meat">
             <h3>The Meatfielder</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -104,7 +108,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="vegy">
             <h3>Original Cheese & Tomato</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -122,7 +126,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="vegy">
             <h3>Vegi Supreme</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -140,7 +144,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="chilli">
             <h3>American Hot
             </h3>
             <picture>
@@ -159,7 +163,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="meat">
             <h3>Chicken Feast</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -177,7 +181,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="meat">
             <h3>Farmhouse
             </h3>
             <picture>
@@ -196,8 +200,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-
-          <li>
+          <li class="tabs__card" id="chilli">
             <h3>Pepperoni Passion</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -215,7 +218,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="meat">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -233,7 +236,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="vegy">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -251,7 +254,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="chilli">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -269,7 +272,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="vegy">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -287,7 +290,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="meat">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -305,7 +308,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="chilli">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -323,7 +326,7 @@
               <button class="btn">More</button>
             </div>
           </li>
-          <li>
+          <li class="tabs__card" id="chilli">
             <h3>Hawaiian</h3>
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
@@ -341,7 +344,6 @@
               <button class="btn">More</button>
             </div>
           </li>
-
 
         </ul>
         <button class="button main__button"> Показати більше</button>

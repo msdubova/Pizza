@@ -668,6 +668,10 @@ button,
   color: #565450;
 }
 
+.tabs__card--hidden {
+  display: none;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

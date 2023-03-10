@@ -54,3 +54,9 @@
     color: $color-secondary-grey;
   }
 }
+
+.tabs__card {
+  &--hidden {
+    display: none;
+  }
+}
