@@ -217,12 +217,14 @@ buttonMores.forEach(function(element) {
     let card = element.closest('li');
     let heading = card.querySelector('h3').innerHTML;
     let image = card.querySelector('picture').innerHTML;
+    let text=card.querySelector('p').innerHTML;
 
     let modal = document.querySelector('.modal__description');
 
 
     modal.querySelector('h3').innerHTML = heading;
     modal.querySelector('picture').innerHTML = image;
+    modal.querySelector('p').innerHTML = text;
 
   }
   );
