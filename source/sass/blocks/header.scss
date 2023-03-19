@@ -2,25 +2,35 @@
   background-image: url("../../img/svg/gradient-main.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 
-  button {}
 }
 
 .header__container {
+
   display: grid;
-  grid-template-columns: 210px 1fr 286px;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 36px;
+
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
-.header__nav {display: flex;
+.header__logo {
+  line-height: 0;
+}
+
+.header__nav {
+  flex-grow: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   ul {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
+    grid-column-gap: 36px;
 
   }
 
@@ -28,13 +38,36 @@
     text-align: center;
 
   }
+
+  a {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    &[href="#"] {
+      font-weight: 600;
+    }
+
+
+  }
 }
 
 .header__user {
   @include reset-ul();
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-area: auto;
   max-width: 286px;
   grid-column-gap: 24px;
+
+  button {
+    margin: 0;
+    padding: 15px;
+
+  }
+
+  svg {
+    margin-right: 8px;
+  }
 }

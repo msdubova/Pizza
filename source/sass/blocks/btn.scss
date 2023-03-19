@@ -31,6 +31,15 @@
     pointer-events: none;
   }
 
+  &--greenborder {
+background: none;
+color: $color-secondary-green;
+border: 1px solid $color-secondary-green;
+svg {
+  fill: $color-secondary-green;
+}
+  }
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {

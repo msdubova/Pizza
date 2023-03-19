@@ -8,7 +8,7 @@
 
   li {
     min-height: 620px;
-    padding: 24px;
+    padding: 24px 20px;
     border-radius: 10px;
     background-image: url("../../img/svg/gradient-main.svg");
     background-repeat: no-repeat;
@@ -55,7 +55,8 @@
   }
 }
 .tabs__controls {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+
 }
 .tabs__card {
   &--hidden {

@@ -19,7 +19,7 @@
   <h1 class="visually-hidden">Pizza PepePizza</h1>
   <header class="header">
     <div class="header__container container">
-      <a  class="header__logo">
+      <a class="header__logo">
         <svg width="176" height="49" role="img">
           <use xlink:href="img/sprite_auto.svg#logo"></use>
         </svg>
@@ -27,23 +27,23 @@
       <nav class="header__nav nav">
         <ul>
           <li>
-            <a class="nav__element">
-              Піца
+            <a href="#" class="nav__element">
+              Pizza
             </a>
           </li>
           <li>
             <a href="drinks.html" class="nav__element">
-              Напої
+              Drinks
             </a>
           </li>
           <li>
             <a href="sides.html" class="nav__element">
-              Інші страви
+              Starters and Sides
             </a>
           </li>
           <li>
             <a href="desserts.html" class="nav__element">
-              Десерти
+              Desserts
             </a>
           </li>
         </ul>
@@ -52,11 +52,16 @@
       <ul class="header__user">
         <li>
 
-          <button class="btn">
+          <button class="btn btn--greenborder">
             <svg width="16" height="16" role="img">
               <use xlink:href="img/sprite_auto.svg#icon-user"></use>
             </svg>Login</button>
-        <li><button class="btn">Cart</button>
+        <li>
+          <button class="btn">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+            </svg>
+            Cart</button>
       </ul>
     </div>
   </header>
@@ -66,20 +71,22 @@
       <div class="main__tabs tabs">
         <div class="tabs__controls">
           <input data-tab="#all" class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-1" value=""
-          checked>
-        <label class="custom-radio__label" for="tab-btn-1">All</label>
-        <input data-tab="#meat" class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-2" value="">
-        <label class="custom-radio__label" for="tab-btn-2">Meat</label>
-        <input data-tab="#vegy" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-3" value="">
-        <label class="custom-radio__label" for="tab-btn-3">Vegan</label>
-        <input data-tab="#chilli" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-4"
-          value="">
-        <label class="custom-radio__label" for="tab-btn-4">Chilli</label>
+            checked>
+          <label class="custom-radio__label" for="tab-btn-1">All</label>
+          <input data-tab="#meat" class="custom-radio tabs__control " type="radio" name="tab-btn" id="tab-btn-2"
+            value="">
+          <label class="custom-radio__label" for="tab-btn-2">Meat</label>
+          <input data-tab="#vegy" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-3"
+            value="">
+          <label class="custom-radio__label" for="tab-btn-3">Vegan</label>
+          <input data-tab="#chilli" class="custom-radio tabs__control" type="radio" name="tab-btn" id="tab-btn-4"
+            value="">
+          <label class="custom-radio__label" for="tab-btn-4">Chilli</label>
         </div>
 
         <ul>
           <li class="tabs__card" id="meat">
-            <h3>The Cheeseburger</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-classic-2x.webp 2x, ./img/pizza-classic-1x.webp 1x">
@@ -88,16 +95,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-classic-2x.png 2x"
                 src="./img/pizza-classic-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>The Cheeseburger</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="meat">
-            <h3>The Meatfielder</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-meat-2x.webp 2x, ./img/pizza-meat-1x.webp 1x">
@@ -106,16 +116,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-meat-2x.png 2x"
                 src="./img/pizza-meat-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>The Meatfielder</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="vegy">
-            <h3>Original Cheese & Tomato</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-vegy-2x.webp 2x, ./img/pizza-vegy-1x.webp 1x">
@@ -124,16 +137,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-vegy-2x.png 2x"
                 src="./img/pizza-vegy-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Cheese & Tomato</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="vegy">
-            <h3>Vegi Supreme</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-ham-2x.webp 2x, ./img/pizza-ham-1x.webp 1x">
@@ -142,17 +158,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-ham-2x.png 2x"
                 src="./img/pizza-ham-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Vegi Supreme</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="chilli">
-            <h3>American Hot
-            </h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-procuto-2x.webp 2x, ./img/pizza-procuto-1x.webp 1x">
@@ -161,16 +179,20 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizzaprocuto-2x.png 2x"
                 src="./img/pizza-procuto-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>American Hot
+            </h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="meat">
-            <h3>Chicken Feast</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-cheese-2x.webp 2x, ./img/pizza-cheese-1x.webp 1x">
@@ -179,17 +201,41 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-cheese-2x.png 2x"
                 src="./img/pizza-cheese-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Chicken Feast</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="meat">
+
+            <picture>
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
+
+              <!-- 1x: 320x320; 2x: 640x640 -->
+              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
+                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
+            </picture>
             <h3>Farmhouse
             </h3>
+            <span>Ingredients:</span>
+            <p></p>
+            <p> Serves 3-4</p>
+            <div>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
+            </div>
+          </li>
+          <li class="tabs__card" id="chilli">
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -198,34 +244,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
-            <span>Ingredients:</span>
-            <p></p>
-            <p> Serves 3-4</p>
-            <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
-            </div>
-          </li>
-          <li class="tabs__card" id="chilli">
             <h3>Pepperoni Passion</h3>
-            <picture>
-              <!-- 1x: 320x320; 2x: 640x640 -->
-              <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
-
-              <!-- 1x: 320x320; 2x: 640x640 -->
-              <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
-                src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
-            </picture>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="meat">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -234,16 +265,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="vegy">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -252,17 +286,20 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
 
           <li class="tabs__card" id="chilli">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -271,16 +308,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="vegy">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -289,16 +329,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="meat">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -307,16 +350,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="chilli">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -325,16 +371,19 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
           <li class="tabs__card" id="chilli">
-            <h3>Hawaiian</h3>
+
             <picture>
               <!-- 1x: 320x320; 2x: 640x640 -->
               <source type="image/webp" srcset="./img/pizza-neapolitana-2x.webp 2x, ./img/pizza-neapolitana-1x.webp 1x">
@@ -343,12 +392,15 @@
               <img loading="lazy" width="320" height="320" srcset="./img/pizza-neapolitana-2x.png 2x"
                 src="./img/pizza-neapolitana-1x.png" alt="Изображение Фитнес-клуба SuperGym">
             </picture>
+            <h3>Hawaiian</h3>
             <span>Ingredients:</span>
             <p></p>
             <p> Serves 3-4</p>
             <div>
-              <button class="btn">Add to cart</button>
-              <button class="btn">More</button>
+              <button class="btn">Add to cart <svg width="16" height="16" role="img">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg></button>
+              <button class="btn btn--more" data-open-modal="success">More</button>
             </div>
           </li>
 
@@ -440,7 +492,24 @@
       </nav>
     </div>
   </footer>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content container--modal">
+        <div class="modal__description">
 
+<h3></h3>
+<picture></picture>
+
+        </div>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

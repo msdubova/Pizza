@@ -205,3 +205,26 @@ export class Modals {
     this._enableScrolling = true;
   }
 }
+
+// let getData = function(){
+
+// }
+let buttonMores = document.querySelectorAll('.btn--more');
+
+
+buttonMores.forEach(function(element) {
+  element.addEventListener('click', function () {
+    let card = element.closest('li');
+    let heading = card.querySelector('h3').innerHTML;
+    let image = card.querySelector('picture').innerHTML;
+
+    let modal = document.querySelector('.modal__description');
+
+
+    modal.querySelector('h3').innerHTML = heading;
+    modal.querySelector('picture').innerHTML = image;
+
+  }
+  );
+});
+

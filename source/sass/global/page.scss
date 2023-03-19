@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  // line-height: 24px;
   font-family: 'Montserrat', 'Arial', sans-serif;
   // color: $color-primary-black;
   letter-spacing: 0;
@@ -27,6 +27,7 @@
 .page a,
 .page input,
 .page button {
+  // fill: none;
   &:hover {
     // outline: 3px solid $color-default-white;
     opacity: 0.8;
@@ -52,4 +53,8 @@
 .page a,
 .page button {
   user-select: none;
+}
+
+.page svg {
+  display: inline;
 }
